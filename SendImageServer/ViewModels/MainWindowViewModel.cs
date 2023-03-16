@@ -69,7 +69,7 @@ namespace SendImageServer.ViewModels
                         Task.Run(() =>
                         {
                             var lenght = 0;
-                            var bytes=new byte[1024];
+                            var bytes=new byte[5000000];
                             lenght= client.Receive(bytes);
                             var image = ImageHelper.SaveAndGetImagePath(bytes);
                             window.Dispatcher.Invoke(() =>

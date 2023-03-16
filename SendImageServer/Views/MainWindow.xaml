@@ -16,7 +16,7 @@
             Start
         </Button>
         <TextBlock Text="Items : " FontSize="20" FontWeight="Bold"></TextBlock>
-        <ListView Background="Aqua" ItemsSource="{Binding Images,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
+        <ListView  ItemsSource="{Binding Images,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}">
             <ListView.ItemTemplate >
                 <DataTemplate>
                     <Border Width="150"
